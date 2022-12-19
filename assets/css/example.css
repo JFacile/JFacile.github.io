@@ -1,0 +1,125 @@
+:root {
+  --bg-color: rgb(65, 56, 56);
+  --title-color: #f7df1e;
+  --hover-color: rgb(0, 0, 92);
+  --texte-color: white;
+}
+
+html {
+  background-color: var(--bg-color);
+  scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+  color: var(--title-color);
+}
+
+#wrap {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  z-index: 99;
+  background-color: var(--bg-color);
+}
+.navbar {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  /*position: absolute; */
+}
+.navbar li {
+  height: auto;
+  width: 135.8px;
+  float: left;
+  text-align: center;
+  list-style: none;
+  font: normal bold 13px/1em Arial, Verdana, Helvetica;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-color);
+}
+.navbar a {
+  padding: 18px 0;
+  border-left: 1px solid #ccc9c9;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.navbar li:hover,
+a:hover {
+  background-color: var(--hover-color);
+}
+.navbar li ul {
+  display: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.navbar li:hover ul {
+  display: block;
+}
+.navbar li ul li {
+  background-color: #444444;
+}
+.navbar li ul li a {
+  border-left: 1px solid #444444;
+  border-right: 1px solid #444444;
+  border-top: 1px solid #c9d4d8;
+  border-bottom: 1px solid #444444;
+}
+.navbar li ul li a:hover {
+  background-color: var(--hover-color);
+}
+.jfacile-logo {
+  border: 2px solid black;
+  margin-left: 87%;
+  top: -120%;
+  position: relative;
+  height: 300%;
+  width: 11%;
+  background: url(../img/JFacile.png) top/cover no-repeat;
+}
+#docs-navbar {
+  display: flex;
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+
+.express-server {
+  color: white;
+  margin: 25px;
+  font-size: x-large;
+}
+.warning {
+  border: 5px solid red;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  height: 300px;
+  padding: 15px;
+}
+.danger {
+  color: red;
+}
+a {
+  color: var(--title-color);
+}
+color {
+  color: var(--title-color);
+}
+
+.process {
+  color: white;
+  font-size: x-large;
+  margin: 25px;
+}
+
+.calculate {
+  margin: 25px;
+  color: white;
+  font-size: x-large;
+}

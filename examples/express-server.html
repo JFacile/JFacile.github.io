@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="JFacile Docs" />
+    <meta name="description" content="Official documentation of JFacile" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/prism.css" />
+    <link rel="stylesheet" href="../assets/css/example.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/JFacile.png"
+      type="image/x-icon"
+    />
+    <title>JFacile Docs - Example</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>JFacile Documentation</h1>
+      <ul class="navbar">
+        <li>
+          <a href="../index.html">Acceuil</a>
+        </li>
+        <li>
+          <a href="../docs/documentation.html">Docs</a>
+          <ul>
+            <li>
+              <a href="../docs/documentation.html#get-started">Get Started</a>
+            </li>
+            <li>
+              <a href="../docs/documentation.html#express-server"
+                >Express Server</a
+              >
+            </li>
+            <li>
+              <a href="../docs/documentation.html#maths-functions"
+                >Maths Functions</a
+              >
+            </li>
+            <li><a href="../docs/documentation.html#process">Process</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Examples</a>
+          <ul>
+            <li>
+              <a href="./express-server.html">Basic express server</a>
+            </li>
+            <li><a href="./anti-crash.html">Process anti-crash</a></li>
+            <li><a href="./calculate.html">Calculate</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Usefuls links</a>
+          <ul>
+            <li><a id="githubBtn" href="#">Github repos</a></li>
+            <li><a id="npmBtn" href="#">NpmJS page</a></li>
+            <li><a id="issusBtn" href="#">Issus in github</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="jfacile-logo"></div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <section class="express-server">
+      <h1 class="text-center">
+        Example of a basic express server with JFacile
+      </h1>
+      <br />
+      1 ) Launch the server
+      <br /><br />
+      <div class="">
+        <pre class="language-js" tabindex="0" data-src-status="loaded">
+          <code class="langague-js">
+              <span class="">const JFacile = require("jfacile");</span>
+              <br>
+              <span class="">JFacile.run(3000);</span>
+          </code>
+         </pre>
+      </div>
+      <br /><br />
+      2 ) Add the main route
+      <br /><br />
+      <div class="">
+        <pre class="language-js" tabindex="0" data-src-status="loaded">
+          <code class="langague-js">
+              <span class="">const JFacile = require("jfacile");</span>
+              <br>
+              <span class="">JFacile.route("/", "Hello World !", "home");</span>
+              <span class="">JFacile.run(3000);</span>
+          </code>
+         </pre>
+      </div>
+      <br /><br />
+      <div class="warning">
+        <h1 class="text-center danger">Warning ! The render</h1>
+        <br />
+        The 3rd params of the function <color>route()</color> working with a
+        special model of express and handlebars. You do create a folder
+        <color>views</color> and into this folder a file
+        <color>home.handlebars</color>, the name of this file is the name of the
+        3rd params. Now, into the folder <color>views</color>, create a folder
+        <color>layouts</color> . Into this folder, create a file
+        <color>main.handlebars</color>
+        .
+        <br />
+        Place into this file :
+        <a
+          href="https://github.com/MaelDevFr/express-web-app/blob/main/views/layouts/main.handlebars"
+          >this content</a
+        >
+        <br />
+        and place into the file
+        <color>home.handlebars</color> : Hello World !
+      </div>
+    </section>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/prism.js"></script>
+  </body>
+</html>

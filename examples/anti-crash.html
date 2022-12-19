@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="JFacile Docs" />
+    <meta name="description" content="Official documentation of JFacile" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/prism.css" />
+    <link rel="stylesheet" href="../assets/css/example.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/JFacile.png"
+      type="image/x-icon"
+    />
+    <title>JFacile Docs - Example</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>JFacile Documentation</h1>
+      <ul class="navbar">
+        <li>
+          <a href="../index.html">Acceuil</a>
+        </li>
+        <li>
+          <a href="../docs/documentation.html">Docs</a>
+          <ul>
+            <li>
+              <a href="../docs/documentation.html#get-started">Get Started</a>
+            </li>
+            <li>
+              <a href="../docs/documentation.html#express-server"
+                >Express Server</a
+              >
+            </li>
+            <li>
+              <a href="../docs/documentation.html#maths-functions"
+                >Maths Functions</a
+              >
+            </li>
+            <li><a href="../docs/documentation.html#process">Process</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Examples</a>
+          <ul>
+            <li>
+              <a href="./express-server.html">Basic express server</a>
+            </li>
+            <li><a href="./anti-crash.html">Process anti-crash</a></li>
+            <li><a href="./calculate.html">Calculate</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Usefuls links</a>
+          <ul>
+            <li><a id="githubBtn" href="#">Github repos</a></li>
+            <li><a id="npmBtn" href="#">NpmJS page</a></li>
+            <li><a id="issusBtn" href="#">Issus in github</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="jfacile-logo"></div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <section class="process">
+      <h1 class="text-center">Example of anti-crash process with JFacile</h1>
+      <br />
+      1 ) Basic anti-crash
+      <br /><br />
+      <div class="">
+        <pre class="language-js" tabindex="0" data-src-status="loaded">
+          <code class="langague-js">
+              <span class="">const JFacile = require("jfacile");</span>
+              <br>
+              <span class="">JFacile.JExit()</span>
+          </code>
+         </pre>
+      </div>
+      <br /><br />
+      2 ) Advanced anti-crash
+      <br /><br />
+      <div class="">
+        <pre class="language-js" tabindex="0" data-src-status="loaded">
+          <code class="langague-js">
+              <span class="">const JFacile = require("jfacile");</span>
+              <br>
+              <span class="">JFacile.JExit();</span>
+              <span>JFacile.JUnhandledRejection();</span>
+              <span>JFacile.JUnCaughtException();</span>
+              <span>JFacile.JWarning();</span>
+              <span>JFacile.JRejectionHandled();</span>
+              <span>JFacile.JuncaughtExceptionMonitor();</span>
+              <span>JFacile.JmultipleResolves();</span>
+          </code>
+         </pre>
+      </div>
+    </section>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/prism.js"></script>
+  </body>
+</html>

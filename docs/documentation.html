@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/documentation.css" />
+    <link rel="stylesheet" href="../assets/css/prism.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/JFacile.png"
+      type="image/x-icon"
+    />
+    <title>JFacile Docs - Documentation</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>JFacile Documentation</h1>
+      <ul class="navbar">
+        <li>
+          <a href="../index.html">Acceuil</a>
+        </li>
+        <li>
+          <a href="#">Docs</a>
+          <ul>
+            <li><a href="#get-started">Get Started</a></li>
+            <li><a href="#express-server">Express Server</a></li>
+            <li><a href="#maths-functions">Maths Functions</a></li>
+            <li><a href="#process">Process</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Examples</a>
+          <ul>
+            <li>
+              <a href="../examples/express-server.html">Basic express server</a>
+            </li>
+            <li>
+              <a href="../examples/anti-crash.html">Process anti-crash</a>
+            </li>
+            <li><a href="../examples/calculate.html">Calculate</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Usefuls links</a>
+          <ul>
+            <li><a id="githubBtn" href="#">Github repos</a></li>
+            <li><a id="npmBtn" href="#">NpmJS page</a></li>
+            <li><a id="issusBtn" href="#">Issus in github</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="jfacile-logo"></div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div id="docs-navbar">
+      <ul class="navbar">
+        <li>
+          <a href="#get-started">Get Started</a>
+        </li>
+        <li>
+          <a href="#express-server">Express Server</a>
+        </li>
+        <li>
+          <a href="#maths-functions">Maths functions</a>
+        </li>
+        <li>
+          <a href="#process">Process</a>
+        </li>
+      </ul>
+    </div>
+    <br /><br /><br /><br />
+    <hr />
+    <section id="get-started" class="get-started">
+      <h1 class="text-center">Get Started</h1>
+      <br />
+      <div class="step1">
+        To use JFacile, you do install the package in your project.
+        <br /><br />
+        <div class="code">
+          <h3>$ npm install jfacile</h3>
+        </div>
+        <br /><br />
+        Good ! Now, you can require the module in your file.
+        <br /><br />
+        <div class="">
+          <pre class="language-js" tabindex="0" data-src-status="loaded">
+          <code class="langague-js">
+              <span class="">const JFacile = require("jfacile");</span>
+          </code>
+         </pre>
+        </div>
+        <br /><br />
+        Now, you can use JFacile.
+      </div>
+    </section>
+    <hr />
+    <section id="express-server" class="express-server">
+      <h1 class="text-center">Express Server</h1>
+      <br />
+      JFacile is powerful to create simple express server.
+      <br />
+      You can create a express server and a route in 3 lignes of code with
+      JFacile.
+      <br /><br />
+      <div class="functions">
+        run(port) : port = number
+        <br /><br />
+        route(route, titleOfThePage, render) :
+        <ul>
+          <li>route = string</li>
+          <li>titleOfThePage = string</li>
+          <li>render = string</li>
+        </ul>
+        <br />
+        <a class="example" href="../examples/express-server.html"
+          >Example of a express server with JFacile</a
+        >
+      </div>
+    </section>
+    <hr />
+    <section id="maths-functions" class="maths-functions">
+      <h1 class="text-center">Maths Functions</h1>
+      <br />
+      Mathematics is very simple with JavaScript but they are better with
+      JFacile.
+      <br /><br />
+      <div class="functions">
+        difference(a, b) : a & b = number <br /><br />
+        sum(a, b) : a & b = number
+        <br /><br />
+        multi(a, b) : a & b = number
+        <br /><br />
+        divi(a, b) : a & b = number
+        <br /><br />
+        mathPow(a, b) : a & b = number
+        <br /><br />
+        mathRandom() : no params
+        <br /><br />
+        <a class="example" href="../examples/calculate.html"
+          >Example of maths functions with JFacile</a
+        >
+      </div>
+    </section>
+    <hr />
+    <section id="process" class="process">
+      <h1 class="text-center">Process</h1>
+      <br />
+      JFacile introduct a new anti-crash process, very simple in 1 ligne of code
+      ! <br /><br />
+      <div class="functions">
+        JExit() : no params <br /><br />
+        JUnhandledRejection() : no params
+        <br /><br />
+        JUnCaughtException() : no params
+        <br /><br />
+        JWarning() : no params
+        <br /><br />
+        JRejectionHandled() : no params
+        <br /><br />
+        JuncaughtExceptionMonitor() : no params
+        <br /><br />
+        JmultipleResolves() : no params
+        <br /><br />
+        <a href="../examples/anti-crash.html" class="example"
+          >Example of anti-crash process with JFacile</a
+        >
+      </div>
+    </section>
+    <script src="../assets/js/prism.js"></script>
+  </body>
+</html>
