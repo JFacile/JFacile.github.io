@@ -97,7 +97,10 @@
           <code class="langague-js">
               <span class="">const JFacile = require("jfacile");</span>
               <br>
-              <span class="">JFacile.route("/", "Hello World !", "home");</span>
+              <span class="">JFacile.routeGet("/get", "Get Route", "get");</span>
+              <span class="">JFacile.routePost("/post", "Post Route", "post");</span>
+              <span class="">JFacile.routePut("/put", "Put Route", "put");</span>
+              <span class="">JFacile.routeDelete("/delete", "Delete Route", "delete");</span>
               <span class="">JFacile.run(3000);</span>
           </code>
          </pre>
